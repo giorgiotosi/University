@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="659.0" prefWidth="942.0" style="-fx-background-radius: 10; -fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.Op_MainController">
+   <children>
+      <AnchorPane prefHeight="74.0" prefWidth="963.0" style="-fx-background-color: #00264d;">
+         <children>
+            <Button fx:id="goHomeButton" layoutX="826.0" layoutY="22.0" mnemonicParsing="false" onMouseClicked="#goHome" prefHeight="30.0" prefWidth="77.0" style="-fx-background-radius: 10; -fx-background-color: WHITE;" text="Home" textFill="#00264d" AnchorPane.rightAnchor="59.60000000000002" AnchorPane.topAnchor="22.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="goBackButton" layoutX="46.0" layoutY="22.0" mnemonicParsing="false" onMouseClicked="#goBack" prefHeight="30.0" style="-fx-background-radius: 10; -fx-background-color: WHITE;" text="Indietro" textFill="#00264d" textOverrun="CENTER_WORD_ELLIPSIS" AnchorPane.leftAnchor="46.0" AnchorPane.topAnchor="22.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Text fill="WHITE" layoutX="172.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selezione data e orario disponibilità uffici" wrappingWidth="594.2972106933594">
+               <font>
+                  <Font name="Arial Narrow Bold" size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <GridPane fx:id="gridButtons" alignment="CENTER" layoutX="32.0" layoutY="221.0" prefHeight="420.0" prefWidth="700.0" style="-fx-background-color: F1F1F1; -fx-background-radius: 10;">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="15:00" textAlignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="7">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="8:00" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text layoutX="28.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9:00" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text layoutX="24.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10:00" textAlignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text layoutX="20.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="11:00" textAlignment="CENTER" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="8:00" textAlignment="CENTER" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="12:00" textAlignment="CENTER" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="12:00" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="12:00" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="12:00" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="12:00" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="11:00" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="11:00" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="11:00" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="11:00" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="10:00" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="10:00" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="10:00" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="10:00" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="9:00" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="9:00" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="9:00" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="9:00" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="8:00" textAlignment="CENTER" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="8:00" textAlignment="CENTER" GridPane.columnIndex="3">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="8:00" textAlignment="CENTER" GridPane.columnIndex="4">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="17:00" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="9">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="14:00" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="15:00" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="7">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="16:00" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="8">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="14:00" textAlignment="CENTER" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="15:00" textAlignment="CENTER" GridPane.rowIndex="7">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="16:00" textAlignment="CENTER" GridPane.rowIndex="8">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="17:00" textAlignment="CENTER" GridPane.rowIndex="9">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="13:00" textAlignment="CENTER" wrappingWidth="50.888184785842896" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="8:00" textAlignment="CENTER" GridPane.columnIndex="5">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="8:00" textAlignment="CENTER" GridPane.columnIndex="6">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="9:00" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="9:00" textAlignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="10:00" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="10:00" textAlignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="11:00" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="11:00" textAlignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="12:00" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="12:00" textAlignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="13:00" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="13:00" textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="13:00" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="13:00" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="13:00" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="13:00" textAlignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="14:00" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="14:00" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="14:00" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="14:00" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="14:00" textAlignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="15:00" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="15:00" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="7">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="15:00" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="7">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="15:00" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="7">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="16:00" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="16:00" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="8">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="16:00" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="8">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="16:00" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="8">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="16:00" textAlignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="8">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="17:00" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="9">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="17:00" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="9">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="17:00" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="9">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="17:00" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="9">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="17:00" textAlignment="CENTER" GridPane.columnIndex="6" GridPane.rowIndex="9">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="66.0" prefWidth="133.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="78.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="86.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="117.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="113.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.rowIndex="4" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="42.0" prefWidth="145.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.rowIndex="5" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="85.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.rowIndex="6" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="106.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.rowIndex="7" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="73.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.rowIndex="8" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="86.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.rowIndex="9" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="136.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="1" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="122.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="115.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="82.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="106.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="95.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="82.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="150.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="142.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="136.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="113.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="2" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="98.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="108.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="112.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="81.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="110.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="90.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="189.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="42.0" prefWidth="124.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="2" GridPane.rowIndex="8">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin></Button>
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="135.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="262.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="3" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="181.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="123.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="125.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="105.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="103.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="91.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="105.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="94.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="75.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="69.0" prefWidth="100.0" style="-fx-background-radius: 10; -fx-background-color: transparent;" GridPane.columnIndex="4" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="83.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="76.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="80.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="66.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="74.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="103.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="129.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="84.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="94.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="4" GridPane.rowIndex="9" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="110.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="5" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="103.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="99.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="98.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="95.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="105.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="67.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="88.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="88.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="81.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="5" GridPane.rowIndex="9" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="94.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="6" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="72.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="91.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="105.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="86.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="82.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="86.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="70.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="72.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+            <Button mnemonicParsing="false" onAction="#write" prefHeight="111.0" prefWidth="100.0" style="-fx-background-color: transparent; -fx-background-radius: 10;" GridPane.columnIndex="6" GridPane.rowIndex="9" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="32.0" layoutY="163.0" prefHeight="57.0" prefWidth="700.0" style="-fx-background-color: #00264d; -fx-background-radius: 10;">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="111.0" text="LUN" textFill="WHITE" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="110.0" text="MAR" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="114.0" text="MER" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="BOTTOM" prefHeight="18.0" prefWidth="120.0" text="GIO" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="116.0" text="VEN" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="122.0" text="SAB" textFill="WHITE" GridPane.columnIndex="5" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="day1" alignment="CENTER" prefHeight="8.0" prefWidth="113.0" text="1" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label fx:id="day2" alignment="CENTER" prefHeight="18.0" prefWidth="116.0" text="2" textFill="WHITE" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label fx:id="day3" alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="120.0" text="3" textFill="WHITE" GridPane.columnIndex="2">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label fx:id="day4" alignment="CENTER" prefHeight="18.0" prefWidth="116.0" text="4" textFill="WHITE" GridPane.columnIndex="3">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label fx:id="day5" alignment="CENTER" prefHeight="18.0" prefWidth="116.0" text="5" textFill="WHITE" GridPane.columnIndex="4">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label fx:id="day6" alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="134.0" text="6" textFill="WHITE" GridPane.columnIndex="5">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label fx:id="day7" alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="115.0" text="7" textFill="WHITE" GridPane.columnIndex="6">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <Label alignment="CENTER" prefHeight="18.0" prefWidth="126.0" text="DOM" textFill="WHITE" GridPane.columnIndex="6" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <AnchorPane layoutX="767.0" layoutY="69.0" prefHeight="520.0" prefWidth="190.0">
+         <children>
+            <Label fx:id="setDay" alignment="CENTER" layoutX="45.0" layoutY="218.0" prefHeight="21.0" prefWidth="100.0" text="16/11/2023" textAlignment="CENTER" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="44.60000000000002">
+               <font>
+                  <Font name="Arial Narrow Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="55.0" layoutY="283.0" text="Dalle ore:" textFill="#0057ae" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="54.599999999999994">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="setHBegin" alignment="CENTER" layoutX="70.0" layoutY="313.0" prefHeight="21.0" prefWidth="51.0" text="9.00" textAlignment="CENTER" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="70.80000000000001">
+               <font>
+                  <Font name="Arial Narrow Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="60.0" layoutY="383.0" text="Alle ore:" textFill="#0057ae" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="59.19999999999999">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="setHEnd" alignment="CENTER" layoutX="76.0" layoutY="413.0" text="10.00" textAlignment="CENTER" AnchorPane.leftAnchor="76.0" AnchorPane.rightAnchor="76.8">
+               <font>
+                  <Font name="Arial Narrow Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="rendiDisponibileButton" layoutX="9.0" layoutY="484.0" mnemonicParsing="false" onMouseClicked="#disponibile" prefHeight="34.0" prefWidth="179.0" style="-fx-background-color: #00264d; -fx-background-radius: 10;" text="Rendi disponibile" textFill="WHITE" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="7.800000000000011">
+               <font>
+                  <Font name="Arial Narrow Bold" size="18.0" />
+               </font>
+            </Button>
+            <Text fx:id="error" fill="RED" layoutX="30.0" layoutY="463.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="131.0">
+               <font>
+                  <Font name="Arial Narrow" size="17.0" />
+               </font>
+            </Text>
+            <Separator layoutX="-14.0" layoutY="6.0" orientation="VERTICAL" prefHeight="584.0" prefWidth="16.0" />
+            <Separator layoutX="-4.0" layoutY="129.0" prefWidth="200.0" />
+            <Label layoutX="60.0" layoutY="31.0" text="Servizio:" textFill="#0057ae">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="servizio" layoutX="20.0" layoutY="69.0" opacity="0.75" prefWidth="150.0" style="-fx-background-radius: 10;" />
+            <Label layoutX="65.0" layoutY="173.0" prefHeight="27.0" prefWidth="72.0" text="Slot del:" textFill="#0057ae" AnchorPane.leftAnchor="65.0" AnchorPane.rightAnchor="59.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="rendiNonDisponibileButton" layoutX="9.0" layoutY="533.0" mnemonicParsing="false" onMouseClicked="#nonDisponibile" prefHeight="34.0" prefWidth="179.0" style="-fx-background-color: #00264d; -fx-background-radius: 10;" text="Rendi non disponibile" textFill="WHITE">
+               <font>
+                  <Font name="Arial Narrow Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Text fx:id="month" fill="#00264d" layoutX="209.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Month" textAlignment="CENTER" wrappingWidth="131.0">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Text>
+      <Text fx:id="year" fill="#00264d" layoutX="444.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year" textAlignment="CENTER" wrappingWidth="130.99999999999994">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+      <Button fx:id="goNextMonthButton" alignment="CENTER" contentDisplay="CENTER" layoutX="666.0" layoutY="104.0" mnemonicParsing="false" onMouseClicked="#goNextWeek" prefHeight="30.0" prefWidth="30.0" style="-fx-background-radius: 10; -fx-background-color: white; -fx-border-color: #00264d;" text="&gt;" textFill="#00264d">
+         <font>
+            <Font name="Arial Narrow Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="goNextMonthButton" alignment="CENTER" contentDisplay="CENTER" layoutX="64.0" layoutY="104.0" mnemonicParsing="false" onMouseClicked="#goBackWeek" prefHeight="30.0" prefWidth="30.0" style="-fx-background-radius: 10; -fx-background-color: white; -fx-border-color: #00264d;" text="&lt;" textFill="#00264d">
+         <font>
+            <Font name="Arial Narrow Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
