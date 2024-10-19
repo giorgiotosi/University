@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.LoginController">
+   <children>
+      <Text fx:id="loginTag" fill="#0057ae" layoutX="105.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Accedi" wrappingWidth="90.10934829711914">
+         <font>
+            <Font name="Arial Narrow Bold" size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="loginDescriptionTag" layoutX="42.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Se ti sei già registrato, accedi usando le tue credenziali" textAlignment="CENTER" wrappingWidth="213.10934829711914">
+         <font>
+            <Font name="Arial Narrow" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="#0057ae" layoutX="41.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Codice fiscale" wrappingWidth="128.10934829711914">
+         <font>
+            <Font name="Arial Narrow Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="cod_fisc_field" layoutX="42.0" layoutY="218.0" prefHeight="25.0" prefWidth="215.0" promptText="PLTMNL02C22G273N" />
+      <Text fill="#0057ae" layoutX="42.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="128.10934829711914">
+         <font>
+            <Font name="Arial Narrow Bold" size="18.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="password_field" layoutX="43.0" layoutY="283.0" prefHeight="25.0" prefWidth="215.0" promptText="password" />
+      <Separator fx:id="verticalSep" layoutX="299.0" layoutY="81.0" orientation="VERTICAL" prefHeight="280.0" prefWidth="1.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="298.0" AnchorPane.rightAnchor="298.0" />
+      <Text fx:id="registrationTag" fill="#0057ae" layoutX="388.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registrati" wrappingWidth="119.70938491821289">
+         <font>
+            <Font name="Arial Narrow Bold" size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="registrationDescriptionTag" layoutX="319.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Se è la prima volta che usufruisci del nostro servizio, registrati premendo il tasto in basso per ottenere le tue credenziali di accesso." textAlignment="CENTER" wrappingWidth="258.10934829711914">
+         <font>
+            <Font name="Arial Narrow" size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="error" fill="RED" layoutX="55.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="189.10934829711914">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutX="199.0" layoutY="118.0" prefHeight="80.0" prefWidth="600.0" style="-fx-background-color: #00264d;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="back" layoutX="29.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#goBack" prefHeight="30.0" style="-fx-background-radius: 10; -fx-background-color: WHITE;" text="Indietro" textFill="#00264d" textOverrun="CENTER_WORD_ELLIPSIS">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+      <Button fx:id="loginButton" layoutX="84.0" layoutY="340.0" mnemonicParsing="false" onMouseClicked="#login" prefHeight="20.0" prefWidth="130.0" style="-fx-background-radius: 10; -fx-background-color: #00264d;" text="Accedi" textFill="WHITE">
+         <font>
+            <Font name="Arial Narrow Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="registrationButton" layoutX="383.0" layoutY="340.0" mnemonicParsing="false" onMouseClicked="#registration" prefHeight="20.0" prefWidth="130.0" style="-fx-background-radius: 10; -fx-background-color: #00264d;" text="Registrati" textFill="WHITE">
+         <font>
+            <Font name="Arial Narrow Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
