@@ -24,6 +24,8 @@ public class Main extends QApplication{
 	}
 	
 	private void initializeUI() {
+		
+		System.out.print("ue");
 
 		engine = new QQmlApplicationEngine();
 		

@@ -130,7 +130,7 @@ ApplicationWindow {
                 Column {
                     anchors.fill: parent
                     spacing: 10
-                    padding: 10
+                    //padding: 10
 
                     // Campo per il nome
                     Column {
@@ -239,7 +239,7 @@ ApplicationWindow {
                         text: "OK"
                         anchors.horizontalCenter: parent.horizontalCenter
                         onClicked: {
-                            listaModel.addProduct(nomeInput.text, prezzoInput.text, descrizioneInput.text);
+                            listaModel.addElement(nomeInput.text, prezzoInput.text, descrizioneInput.text);
                             addProductDialog.close(); // Chiude il dialogo
                         }
                     }

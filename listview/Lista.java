@@ -87,13 +87,31 @@ public class Lista<T> extends QAbstractListModel {
 		}
 	}
 	
+	
 	@SuppressWarnings("unchecked")
-	public void addProduct(String newName, String newPrice, String newDescription) {
-	    Prodotto newProduct = new Prodotto(newName, newPrice, newDescription);
+	public void addElement(Object... args) {
+		System.out.println("addElement chiamato");
+		 System.out.println("Numero di argomenti: " + args.length);
+		    
+		    // Stampa i tipi di ogni argomento
+		    for (int i = 0; i < args.length; i++) {
+		        System.out.println("Argomento " + i + ": " + args[i].getClass().getName());
+		    }
+		// Aproccio più preciso ma più rigido --> non ritorna true per le sottoclassi
+		/*Class<?> itemClass = items.get(0).getClass();
+		if(itemClass.equals(Prodotto.class) )*/
+		T newElement = null;
+		// Approccio più flessibile ma più ambiguo --> ritorna true per le sottoclassi
+		if (items.get(0) instanceof Prodotto) {
+			 if (args.length == 3 && args[0] instanceof String && args[1] instanceof String && args[2] instanceof String) {
+			newElement = (T) new Prodotto((String) args[0], (String) args[1], (String) args[2]);
+			System.out.println(newElement);
+			 }
+		}
 	    int newIndex = items.size();
 	    //Quando si aggiungono nuove righe al modello si usano beginInsertRows() ed endInsertRows()  
 	    beginInsertRows(new QModelIndex(), newIndex, newIndex); 
-	    items.add((T) newProduct); 
+	    items.add((T) newElement); 
 	    endInsertRows(); 
 	}
 
