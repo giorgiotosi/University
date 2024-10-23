@@ -3,6 +3,7 @@ import QtQuick.Controls 2.15
 import QtQuick.Shapes 1.15
 import QtQuick3D
 import QtQuick3D.Helpers
+import MyApp 1.0
 
 ApplicationWindow {
     visible: true
@@ -233,14 +234,42 @@ ApplicationWindow {
                         }
                     }
 
-                    // Bottone OK per confermare e chiudere
                     Button {
                         visible: true
                         text: "OK"
                         anchors.horizontalCenter: parent.horizontalCenter
-                        onClicked: {
-                            listaModel.addElement(nomeInput.text, prezzoInput.text, descrizioneInput.text);
-                            addProductDialog.close(); // Chiude il dialogo
+                        background: Rectangle {
+                            color: "white"//verde pastello
+                            radius: 5 // Raggio degli angoli
+                            border.color: "black" // Colore del bordo
+                            border.width: 1 // Spessore del bordo
+                        }
+
+                        Prodotto{
+                            id: newProduct
+                            nome:nomeInput.text
+                            prezzo:prezzoInput.text
+                            descrizione: descrizioneInput.text
+                        }
+
+                        MouseArea{
+
+                            anchors.fill: parent
+                            hoverEnabled: true
+                            onClicked: {
+                                    newProduct.setNome(nomeInput.text);
+                                    newProduct.setPrezzo(prezzoInput.text);
+                                    newProduct.setDescrizione(descrizioneInput.text);
+                                   /* var nuovoProdotto = Qt.createQmlObject(
+                                        'import MyApp 1.0; prodotto { nome: "' + nomeInput.text + '"; prezzo: "' + prezzoInput.text + '"; descrizione: "' + descrizioneInput.text + '" }',
+                                        parent
+                                    );
+*/
+
+                                listaModel.addElement(newProduct);
+                                addProductDialog.close(); // Chiude il dialogo
+                            }
+
                         }
                     }
                 }
@@ -249,6 +278,37 @@ ApplicationWindow {
 
 
 
+
+            Button {
+                id: trashButton
+                anchors.right: discountButton.left
+                anchors.top: productRectangle.top
+                width: 28
+                height: 28
+                // Margini dal bordo
+                anchors.topMargin: 10
+                anchors.rightMargin: 3
+                background: Rectangle {
+                    color: "lightgray"
+                    radius: 5
+                }
+
+                MouseArea{
+                    anchors.fill: parent
+                    hoverEnabled: true
+                    onClicked: {
+                        listaModel.removeElementAt(model.index);
+                    }
+                }
+
+                Image {
+                    //"file:///Users/asusl/Pictures/153250.jpg"
+                    source: "file:///Users/asusl/Desktop/cestino.png" // Modifica con il percorso corretto dell'icona
+                    anchors.centerIn: parent
+                    width: 20
+                    height: 20
+                }
+            }
 
 
 
