@@ -4,8 +4,6 @@ import java.util.List;
 import io.qt.core.QObject;
 import io.qt.core.QUrl;
 import io.qt.qml.QQmlApplicationEngine;
-//import io.qt.qml.QQmlContext;
-//import io.qt.qml.QQmlEngine;
 import io.qt.qml.QtQml;
 import io.qt.widgets.QApplication;
 
@@ -42,8 +40,6 @@ public class Main extends QApplication{
         // Crea un'istanza del modello con la lista di prodotti
         Lista<Prodotto> model = new Lista<>(prodotti);
        
-        engine.rootContext().setContextProperty("Prodotto", Prodotto.class);
-        
         engine.rootContext().setContextProperty("listaModel", model);
 
 		engine.load(QUrl.fromLocalFile("C:\\Users\\asusl\\eclipse-workspace\\Liste\\src\\listview\\listview.qml"));
